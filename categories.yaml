@@ -1,0 +1,30 @@
+# Editable category tree — change without touching code.
+# A "Custom" free-text option is added automatically for every category.
+categories:
+  - name: "TikTok"
+    sub:
+      - "TikTok Shop"
+      - "TikTok Marketplace"
+      - "TikTok Creativity Rewards Program"
+      - "TikTok Growth Challenge"
+  - name: "YouTube Channels"
+    sub:
+      - "Monetized Channel"
+      - "Non-Monetized Channel"
+      - "Shorts Channel"
+  - name: "Facebook Accounts"
+    sub:
+      - "Personal Profile"
+      - "Business Manager"
+  - name: "Facebook Pages"
+    sub:
+      - "Monetized Page"
+      - "Non-Monetized Page"
+  - name: "Instagram"
+    sub:
+      - "Personal Account"
+      - "Creator Account"
+      - "Business Account"
+  - name: "Other"
+    sub:
+      - "Other Platform"

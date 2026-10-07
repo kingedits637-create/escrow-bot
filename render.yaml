@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: tg-escrow-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python -m bot.main"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: FERNET_KEY
+        sync: false
+      - key: COMMISSION_CENTS
+        value: 200
+      - key: HOLD_HOURS
+        value: 24
+      - key: HANDOVER_HOURS
+        value: 8
+      - key: DELIVERY_DEADLINE_HOURS
+        value: 12
+      - key: BINANCE_MODE
+        value: manual
+      - key: WEBHOOK_URL
+        sync: false
+      - key: PORT
+        value: 8000
+    disk:
+      name: escrow-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
